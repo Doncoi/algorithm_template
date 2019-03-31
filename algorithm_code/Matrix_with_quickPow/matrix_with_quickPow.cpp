@@ -73,8 +73,8 @@ Matrix quickPow(Matrix x, int y) {
 	return tmp;
 }
 
-Matrix E; // 单位阵及其初始化
-void initE(int r, int c) {
+Matrix e; // 单位阵及其初始化
+void initE(Matrix E, int r, int c) {
 	E.r = r; E.c = c;
 	for (int i = 0; i < r; i++) E.a[i][i] = 1;
 }
